@@ -80,7 +80,7 @@ static InterpretResult run(){
 
 InterpretResult interpret(const char* source){
     Chunk chunk;
-    initChuck (&chunk);
+    initChunk (&chunk);
 
     if (!compile(source, &chunk)){
         freeChunk(&chunk);
